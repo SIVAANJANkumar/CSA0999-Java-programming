@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+class years
+{
+public static void main(String args[])
+{
+int y;
+Scanner u=new Scanner(System.in);
+System.out.println("enter the year");
+y=u.nextInt();
+if(y%4==0 && y%400==0 && y%100!=0)
+{
+System.out.println("leap year");
+}
+else
+{
+System.out.println("after leap year"+(4-(y%4)));
+}
+}
+}
