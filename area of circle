@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+class circle
+{
+public static void main(String args[])
+{
+int r;
+float area,circum;
+Scanner C=new Scanner(System.in);
+System.out.println("enter the radius:");
+r=C.nextInt();
+area=((22/7)*r*r);
+circum=(2*(22/7)*r);
+System.out.println("area of circle:"+area);
+System.out.println("circumference of circle:"+circum);
+}
+}
