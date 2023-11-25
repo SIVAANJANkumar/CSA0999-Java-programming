@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+class gp
+{
+int a=5,b=7;
+void display()
+{
+System.out.println(a+b);
+}
+}
+class p extends gp
+{
+int d=10,e=15;
+void display1()
+{
+System.out.println(d+e);
+}
+}
+class c extends p
+{
+void display2()
+{
+System.out.println("Java program");
+}
+}
+class z2
+{
+public static void main(String args[])
+{
+c k1=new c();
+k1.display2();
+k1.display1();
+k1.display();
+}
+}
