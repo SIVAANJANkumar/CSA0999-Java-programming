@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+class add
+{
+int x,y;
+add()
+{
+Scanner u=new Scanner(System.in);
+System.out.println("Enter the x");
+x=u.nextInt();
+System.out.println("Enter the y");
+y=u.nextInt();
+System.out.println("sum is" +(x+y));
+}
+}
+class sums
+{
+public static void main(String args[])
+{
+add n=new add();
+}
+}
