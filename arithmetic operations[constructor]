@@ -1,0 +1,40 @@
+import java.io.*;
+import java.util.*;
+class operation
+{
+int a,b,add,sub,mul,mod;
+float div;
+operation()
+{
+a=0;
+b=1;
+System.out.println("addition:"+(a+b));
+System.out.println("subtraction:"+(a-b));
+System.out.println("multiplication:"+(a*b));
+System.out.println("division:"+(a/b));
+System.out.println("modulus:"+(a%b));
+}
+operation(int u,int v)
+{
+a=u;
+b=v;
+}
+void display()
+{
+System.out.println("addition:"+(a+b));
+System.out.println("subtraction:"+(a-b));
+System.out.println("multiplication:"+(a*b));
+System.out.println("division:"+(a/b));
+System.out.println("modulus:"+(a%b));
+}
+}
+class arithmetic
+{
+public static void main(String args[])
+{
+operation p1=new operation();
+p1.display();
+operation p2=new operation(12,6);
+p2.display();
+}
+}
