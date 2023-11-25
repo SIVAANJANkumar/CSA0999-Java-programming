@@ -1,0 +1,44 @@
+import java.io.*;
+import java.util.*;
+class bank
+{
+void display()
+{
+System.out.println("Rate of interest");
+}
+}
+class SBI extends bank
+{
+void display1()
+{
+System.out.println("Rate of interest of SBI is:8.4");
+}
+}
+class ICICI extends bank
+{
+void display2()
+{
+System.out.println("Rate of interest of ICICI is:7.3");
+}
+}
+class AXIS extends bank
+{
+void display3()
+{
+System.out.println("Rate of interest of AXIS is:9.7");
+}
+}
+class roi
+{
+public static void main(String args[])
+{
+AXIS m1=new AXIS();
+m1.display();
+m1.display3();
+ICICI m2=new ICICI();
+m2.display2();
+SBI m3=new SBI();
+m3.display1();
+}
+}
+
