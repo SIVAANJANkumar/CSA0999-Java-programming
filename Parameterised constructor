@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+class bonus
+{
+int sal;
+float b;
+bonus()
+{
+sal=0;
+b=0.0f;
+System.out.println(sal);
+System.out.println(b);
+}
+bonus(int x,float y)
+{
+sal=x;
+b=y;
+}
+void display()
+{
+System.out.println("salary:"+sal);
+System.out.println("bonus:"+b);
+}
+}
+class para
+{
+public static void main(String args[])
+{
+bonus b1=new bonus();
+b1.display();
+bonus b2=new bonus(10,20.5f);
+b2.display();
+}
+} 
