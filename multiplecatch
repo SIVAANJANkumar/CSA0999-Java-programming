@@ -1,0 +1,17 @@
+import java.io.*;
+class multiplecatch
+{
+public static void main(String args[])
+{
+int z;
+int x[]={3,2,0,4};
+try
+{
+z=x[0]+x[1]/x[7];
+}
+catch(ArrayIndexOutOfBoundsException e)
+{
+System.out.println("Array out of boundary exception");
+}
+}
+}
