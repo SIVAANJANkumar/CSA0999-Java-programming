@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+class compound
+{
+public static void main(String args[])
+{
+int p,n;
+float r,ci;
+Scanner u=new Scanner(System.in);
+System.out.println("enter the amount");
+p=u.nextInt();
+System.out.println("enter the n value");
+n=u.nextInt();
+System.out.println("enter the interest");
+r=u.nextFloat();
+ci=(p*((1+(r/100))*(1+(r/100)))-p);
+System.out.println("Compound interest is:" +(ci));
+}
+}
+
