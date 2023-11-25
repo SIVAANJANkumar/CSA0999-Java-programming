@@ -1,0 +1,22 @@
+import java.io.*;
+class simple
+{
+void interest()
+{
+System.out.println("Calaculate the Simple Interest");
+}
+float interest(int p,int n,float r)
+{
+return (p*n*r)/100;
+}
+}
+class SI
+{
+public static void main(String args[])
+{
+simple m=new simple();
+m.interest();
+System.out.println(m.interest(10000,3,4.5f));
+}
+}
+ 
