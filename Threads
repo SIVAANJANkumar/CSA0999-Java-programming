@@ -1,0 +1,46 @@
+import java.io.*;
+import java.util.*;
+class A extends Thread
+{
+public void run()
+{
+for(int i=0;i<=10;i++)
+{
+if(i==2)
+sleep(500);
+System.out.println(i);
+}
+}
+}
+class B extends Thread
+{
+public void run()
+{
+for (int j=0;j<=10;j++)
+{
+System.out.println(j);
+}
+}
+}
+class C extends Thread 
+{
+public void run()
+{
+for(int k=0;k<=10;k++)
+{
+System.out.println(k);
+}
+}
+}
+class threading
+{
+public static void main(String args[])
+{
+A a=new A();
+a.start();
+B a1=new B();
+a1.start();
+C a2=new C();
+a2.start();
+}
+}
